@@ -1,7 +1,14 @@
 .main-container{
-    background-color: black;
-    width: 70vw;
+    background-color: rgba(0, 0, 0, 0.312);
+    width: 90vw;
     height: 50vh;
+    display: flexbox;
+    justify-content:center;
+
+    
+}
+
+body {
     display: flex;
-    ;
+    justify-content: center;
 }
