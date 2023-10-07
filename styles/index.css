@@ -119,4 +119,5 @@ body {
 .imagen-perrona-container {
     display: flex;
     justify-content: center;
+    background-color: blue;
 }
