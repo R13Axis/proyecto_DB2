@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background:linear-gradient(#671264, #67126400) ;
+    background:linear-gradient(#7f187c, #67126400) ;
     width: 100%;
     height: 100%;
     display: flex;
@@ -22,18 +22,21 @@ body {
     width: 80vw;
     height: 80vh;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 300px 700px;
     grid-template-rows: repeat(20, 1fr);
-    column-gap: 20px;
+    column-gap: 60px;
     row-gap: 10px;
 }
 
 .user-container {
     background-color: #451952;
     grid-row-start: 1;
-    grid-row-end: 20;
+    grid-row-end: 21;
     border-radius: 30px;
-    background: linear-gradient(#451952, #FF00F5);
+    background: linear-gradient(#451952, #930D8E);
+    display: grid;
+    grid-template-rows: repeat(25, 1fr);
+
 }
 
 .categories-container {
@@ -46,10 +49,125 @@ body {
 }
 
 .notes-container {
-    background-color: #F8F8F8;
+    background-color: white;
     grid-column-start: 2;
     border-radius: 30px;
     grid-row-start: 5;
-    grid-row-end: 20;
+    grid-row-end: 19;
+    display: grid;
+    grid-template-rows: repeat(30, 1fr);
+    grid-template-columns: 1fr 120px;
+   justify-content: center;
     
+}
+
+.marca {
+    grid-row-start: 20;
+    grid-column-start: 2;
+    color: white;
+    font-family: 'Overpass', sans-serif;
+    font-size: larger;
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+}
+
+.user-name {
+    color: white;
+    font-family: 'Overpass', sans-serif;
+    grid-row-start: 3;
+    display: flex;
+    justify-content:space-around ;
+}       
+
+.searchbar {
+    color: black;
+    font-family: 'Overpass', sans-serif;
+    grid-row-start: 8;
+    display: flex;
+    justify-content: center;
+}
+
+.text-input {
+    height: 45px;
+    width: 90%;
+    color: black;
+    font-family: 'Overpass', sans-serif;
+    border-radius: 7px;
+}
+
+.tareas-rapidas {
+    color: white;
+    font-family: 'Overpass', sans-serif;
+    grid-row-start: 10;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    font-size: 20px;
+}
+
+.barra-debajo-tareas-rapidas-container {
+    display: flex;
+    justify-content: flex-start;
+    grid-row-start: 12;
+}
+
+.barra-debajo-tareas-rapidas {
+    height: 8%;
+    width: 65%;
+    background-color: white;
+    margin-left: 4%;
+}
+
+.categorias {
+    color: white;
+    font-family: 'Overpass', sans-serif;
+    grid-row-start: 13;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    font-size: 20px;
+}
+
+.pendientes {
+    color: white;
+    font-family: 'Overpass', sans-serif;
+    grid-row-start: 18;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-plus-icon {
+    scale: 65%;
+    margin-right: 10%;
+}
+
+.barra-notas-container {
+    background-color: #F39F5A;
+    grid-row-start: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.canvas-container {
+    grid-row-start: 6;
+    grid-row-end: 30;
+}
+
+.icon-container {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 23;
+    grid-row-end: 30;
+    scale: 10%;
+}
+
+.trash-icon {
+   border-radius: 100px;
 }

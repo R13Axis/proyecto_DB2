@@ -4,13 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/to-do-list.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;400&display=swap" rel="stylesheet">
     <title>AppPerrona</title>
 </head>
 <body>
     <div class="main-container">
-        <div class="user-container"></div>
-        <div class="categories-container"></div>
-        <div class="notes-container"></div>
+        <div class="user-container">
+            <div class="user-name">
+                <h2>Username</h2>
+                <label for="logout">Log Out</label>
+            </div>
+            <div class="searchbar">
+                <input type="text" placeholder="Buscar nota..." class="text-input">
+            </div>
+            <div class="tareas-rapidas">
+                <label for="tareas rapidas">Tareas rápidas</label>
+                <img class="imagen-plus-icon" src="../resources/images/plus.png" alt="">
+            </div>
+            <div class="barra-debajo-tareas-rapidas-container">
+                <div class="barra-debajo-tareas-rapidas"></div>
+            </div>
+            <div class="categorias">
+                <label for="categorias">Categorías</label>
+                <img class="imagen-plus-icon" src="../resources/images/plus.png" alt="">
+            </div>
+            <div class="pendientes">
+                <label for="pendientes">Pendientes</label>
+            </div>
+        </div>
+        <div class="categories-container">
+
+        </div>
+        <div class="notes-container">
+            <div class="barra-notas-container">
+                <div class="barra-notas"></div>
+            </div>
+            <div class="canvas-container">
+                <canvas class="canvas"></canvas>
+            </div>
+            <div class="icon-container">
+                <img src="../resources/images/delete.png" alt="" class="trash-icon">
+            </div>
+        </div>
+        <div class="marca">
+            <label>AppPerronaDeNotas</label>
+        </div>
     </div>
 </body>
 </html>
